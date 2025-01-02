@@ -1,0 +1,90 @@
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../design/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.midSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    width: 40%;
+    height: 70%;
+    border: 2px solid black ;
+    background-color: #c3ccfe;
+    border-radius: 1rem;
+}
+.themeSide{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    width: 30%;
+    height: 10%;
+    margin-bottom: .3rem;
+}
+.screanSide{
+    width:30%;
+    height: 100%;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    height: 10%;
+    background-color: rgb(199, 199, 202);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items: flex-end;
+    font-size: 1.2rem;
+}
+.numberSide{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: .3rem;
+    min-width: 150px;
+    gap: .5rem;
+    width: 30%;
+    height: 40%;
+    max-height: 100%;
+    
+}
+.numberSide:nth-child(n) button{
+    width: 100%;
+    min-width: .7rem;
+    height: 100%;
+    font-size: .9rem;
+    border-radius: .5rem;
+    border:  2px solid black;
+    background-color: rgb(224, 251, 251);
+}
+.anotherButtonStyle{
+    color: red;
+    margin-top: .5rem;
+}
+.numberSide:nth-child(n) button:hover{
+    background-color: rgb(144, 147, 156);
+}
+.numberSide button:nth-child(-n+10){
+    background-color: rgb(206, 217, 217);
+
+}
+
+@media (max-width:550px) {
+    .midSide{
+        width: 90%;
+        height: 95%;
+    }
+    .screanSide ,.numberSide, .screanSide{
+        width: 80%;
+    }
+}
